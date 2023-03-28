@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 struct date{
-	int dd[2],mm[2],yyyy[4];
+	int dd[2],mm[2],yyyy[2];
 };
 
 void main(){

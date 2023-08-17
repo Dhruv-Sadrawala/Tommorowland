@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+	<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Employee.xsd">
+		<no>1</no>
+		<name>abc</name>
+		<mobile>123</mobile>
+		<gender>Male</gender>
+	</employee>

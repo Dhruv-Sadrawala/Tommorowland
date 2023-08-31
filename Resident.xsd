@@ -32,6 +32,7 @@
 				</xsd:simpleType>
 			</xsd:element>
 		</xsd:sequence>
+		<xsd:attribute name="Apartment" default="ABC"></xsd:attribute>
 	</xsd:complexType>
 </xsd:element>
 </xsd:schema>

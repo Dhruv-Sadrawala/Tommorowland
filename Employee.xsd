@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema file:/usr/share/xngr/types/XML%20Schema/Validation/XMLSchema.xsd">
+<xsd:element name="employee">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="no">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="[A-Za-z][0-9]*"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="name">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:whiteSpace value="replace"></xsd:whiteSpace>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="mobile">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer">
+						<xsd:pattern value="[0-9]{10}"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType></xsd:element>
+			<xsd:element name="member" type="xsd:integer" maxOccurs="6"></xsd:element>
+			<xsd:element name="gender">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="Male|Female"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="permanent" type="xsd:boolean"></xsd:attribute> 
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+	<resident xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Resident.xsd">
+		<block_no>a</block_no>
+		<address>abcuhjdwbcjhb</address>
+		<pincode>123456</pincode>
+		<password>abcdefghij12</password>
+	</resident>

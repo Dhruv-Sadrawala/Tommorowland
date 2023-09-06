@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+	<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Boook.xsd">
+		<title></title>
+		<author>ABCDEFG</author>
+		<chapter>
+			<summary></summary>
+			<paragraph>
+				<text></text>
+				<figure>
+					<graphic group="ABC"></graphic>
+				</figure>
+			</paragraph>
+		</chapter>
+	</book>

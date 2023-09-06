@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema file:/home/dhruv/.PlayOnLinux/wineprefix/types/XML%20Schema/Validation/XMLSchema.xsd">
+<xsd:element name="school">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="s_id">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="S[a-zA-Z0-9]*D"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="s_name" type="xsd:string">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="[a-zA-Z]{6}"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="s_year">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:int">
+						<xsd:pattern value="[0-9]{4}"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="s_address">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="city">
+							<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="A[a-zA-Z]*"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+						</xsd:element>
+					    <xsd:element name="state">
+					    	<xsd:complexType>
+					    		<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+					    	</xsd:complexType>
+					    </xsd:element>
+				    </xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="s_code">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:int">
+						<xsd:whiteSpace value="collapse"></xsd:whiteSpace>>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="s_totalstd" type="xsd:string"></xsd:element>
+			<xsd:element name="s_star">
+				<xsd:complexType>
+					<xsd:choice>
+						<xsd:element name="string"></xsd:element>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

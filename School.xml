@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+	<school>
+		<s_id></s_id>
+		<s_name></s_name>
+		<s_year></s_year>
+		<s_address>
+			<city></city>
+			<state name="abc"></state>
+		</s_address>
+		<s_code></s_code>
+		<s_totalstd></s_totalstd>
+		<s_star></s_star>
+	</school>

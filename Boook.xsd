@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema file:/home/dhruv/.PlayOnLinux/wineprefix/types/XML%20Schema/Validation/XMLSchema.xsd">
+<xsd:element name="book">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+			<xsd:element name="author">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="[a-zA-Z]{7}"></xsd:pattern>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="chapter">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="summary" type="xsd:string"></xsd:element>
+						<xsd:element name="paragraph">
+							<xsd:complexType>
+								<xsd:all>
+									<xsd:element name="text" type="xsd:string"></xsd:element>
+									<xsd:element name="figure">
+										<xsd:complexType>
+											<xsd:sequence>
+												<xsd:element name="graphic" maxOccurs="unbounded">
+													<xsd:complexType>
+														<xsd:attribute name="group" type="xsd:string"></xsd:attribute>
+													</xsd:complexType>
+												</xsd:element>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:all>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

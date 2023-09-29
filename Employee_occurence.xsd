@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema file:/usr/share/xngr/types/XML%20Schema/Validation/XMLSchema.xsd">
 <xsd:element name="employee">
+	<xsd:attribute name="permanent" type="xsd:boolean"></xsd:attribute>
 	<xsd:complexType>
 		<xsd:sequence>
 			<xsd:element name="no" type="xsd:integer"></xsd:element>

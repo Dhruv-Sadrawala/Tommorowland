@@ -1,0 +1,17 @@
+cut -d"-" -f(column) text.txt ======== cut -d" " -f text.txt
+paste -d"|" number state capital ======= paste -s-d"|" number state capital
+
+join[only gives common text of both files]
+join file1.txt file2.txt
+
+fold[line words specification]
+fold -w 50 file.txt ======== fold -w 50 -s file.txt[s completes the word befor ending it]
+
+sort file_name.txt ======= sort -o here_to_store.txt file_original.txt
+sort -r file_name.txt[reverse sorting]
+sort -n file_name.txt[numerical sorting]
+sort -nr file_name.txt[numerical reverse sorting]
+sort -k 2 file_name.txt[sorting 2nd column of file]
+sort -c file_name.txt[check sorted or not ,if yes no output no the sort and show output]
+sort -u [removes duplicates]
+sort -m [sort by month]
